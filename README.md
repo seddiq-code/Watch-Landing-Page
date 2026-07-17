@@ -4,7 +4,7 @@ A sleek, fully responsive, and modern landing page designed to showcase premium 
 
 ---
 
-[✨ Live Demo](YOUR_GITHUB_PAGES_LINK_HERE)
+[✨ Live Demo](https://seddiq-code.github.io/Watch-Landing-Page/)
 
 ---
 
