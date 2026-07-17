@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+header{
+
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(71, 60, 60);
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+header .logo i{
+    font-size: 30px;
+    color: rgb(225, 102, 102);
+}
+header .logo p span{
+    color: rgb(225, 102, 102);
+    font-weight: bolder;
+}
+header .logo p{
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border: 1px solid rgb(124, 122, 122);
+    color: white;
+    border-radius: 12px;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(225, 102, 102);
+    color: white;
+}
+
+.search-option{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.search-option input{
+    padding: 4px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+.search-option label i{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+
+}
+
+section .sec-1{
+    flex: 1;
+}
+section .sec-1 h1,h2{
+ animation: fadeIn 2s ease;
+}
+@keyframes fadeIn{
+    from{opacity: 0;
+    transform: translateY(-50px);}
+    to{opacity: 1;
+    transform: translateY(0);}
+}
+
+
+
+section .sec-1 h1{
+    font-size: 58px;
+    text-align: center;
+    color: rgb(225, 102, 102);
+}
+section .sec-1 h2{
+    text-align: center;
+}
+section .sec-1 h2 .span-1{
+    color: rgb(225, 102, 102);
+    text-decoration: underline;
+    font-size: 34px;
+}
+section .sec-1 h2 .span-2{
+    color: rgb(251, 168, 168);
+    font-size: 34px;
+}
+
+section .sec-1 h3{
+    text-align: center;
+    color: rgb(73, 68, 68);
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+section .sec-1 p{
+margin: 20px 20px;
+}
+
+
+section .sec-1 button{
+    margin-top: 10px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40%;
+    background: rgb(225, 102, 102);
+    box-shadow: 3px 3px 10px rgb(225, 102, 102),-3px -3px 10px rgb(225, 102, 102);
+
+}
+
+section .sec-1 button:hover{
+    background-color: rgb(169, 75, 75);
+    cursor: pointer;
+}
+
+section .sec-1 p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+section .sec-2{
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+section .sec-2 img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(196, 194, 188, 0.6);
+    transition: transform 0.3s;
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+}
+section .sec-2 img:hover{
+    transform: scale(1.05);
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.slide.active{
+    display: block;
+    opacity: 1;
+}
+.dots{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+
+footer {
+    background: rgb(71, 60, 60);
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container div {
+   
+    margin: 10px;
+  }
+  
+  .footer-container h3 {
+    color: rgb(225, 102, 102); 
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-container ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-container ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-container ul li a:hover {
+    color: #dcb354;
+  }
+
+  .footer-center ul{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-right a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  .footer-right p{
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .footer-right a:hover {
+    color: #f5cb32;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #8d8888;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+
+  @media (max-width: 768px){
+
+    header {
+        gap: 40px;
+    }
+    header nav ul {
+        
+    }
+
+    section{
+       display: block;
+       padding: 20px;
+    }
+
+
+
+    section .sec-2 img{
+        /* max-width: 400px;
+        height: 400px; */
+        margin-top: 20px;
+
+    } 
+    section .sec-1 h1{
+        font-size: 32px;
+    }
+  }
