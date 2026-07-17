@@ -27,10 +27,10 @@ A sleek, fully responsive, and modern landing page designed to showcase premium 
 ##  Screenshots
 
 ### Desktop View
-![Desktop Screenshots] (Screenshots/desktop.png)
+![Desktop Screenshots](Screenshots/desktop.png)
 
 ### Mobile View
-![Mobile Preview] (Screenshots/mobile.png)
+![Mobile Preview](Screenshots/mobile.png)
 
 
 
